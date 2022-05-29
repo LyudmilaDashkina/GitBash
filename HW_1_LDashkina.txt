@@ -1,0 +1,83 @@
+1)Посмотреть, где я
+pwd
+
+2)Создать папку
+mkdir folder1
+
+3)Зайти в папку
+cd folder1
+
+4)Создать 3 папки
+mkdir folder1.1
+mkdir folder1.2
+mkdir folder1.3
+
+5)Зайти в любую папку
+cd folder1.2
+
+6)Создать 5 файлов (3 txt, 2 json)
+touch file1.txt
+touch file2.txt
+touch file3.txt
+touch file4.json
+touch file5.json
+
+7)Создать 3 папки
+mkdir folder1.2.1
+mkdir folder1.2.2
+mkdir folder1.2.3
+
+8)Вывести список содержимого папки
+ls -la
+
+9)+Открыть любой .txt файл
+cat file1.txt
+
+10)+Написать туда что-нибудь, любой текст
+cat >> file1.txt (после ввода текста нажать Enter)
+
+11)+Сохранить и выйти.
+Ctrl+C
+
+12)Выйти из папки на уровень выше
+cd ..
+
+13)Переместить любые 2 файла, которые Вы создали, в любую другую папку.
+mv file2.txt folder1.2.1/file2.txt
+mv file1.txt folder1.2.3/file1.txt
+
+14)Скопировать любые 2 файла, которые Вы создали, в любую другую папку.
+cp file3.txt folder1.2.3/file3.txt
+cp folder1.2.1/file2.txt folder1.2.3/file2.txt
+
+15)Найти файл по имени
+find . -name file3.txt
+
+16)Просмотреть содержимое в реальном времени (Команда grep) -> Изучите, как она работает.
+cat folder1.2.3/file1.txt
+
+17)Вывести несколько первых строк из текстового файла
+head -6 folder1.2.3/file1.txt
+
+18)Вывести несколько последних строк из текстового файла
+tail -3 folder1.2.3/file1.txt
+
+19)Просмотреть содержимое длинного файла (команда less) -> Изучите, как она работает.
+less folder1.2.3/file1.txt
+
+20)Вывести дату и время.
+date
+
+Задание*
+
+1. Отправить HTTP запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+решение:
+curl http://162.55.220.72:5005/terminal-hw-request
+curl "http://162.55.220.72:5005/get_method?name=Liudmila&age=38"
+
+2. Написать скрипт, который выполнит автоматически пункты 3,4,5,6,7,8,13
+файл myscript.txt
+
+
+
