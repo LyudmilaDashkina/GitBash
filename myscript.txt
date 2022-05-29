@@ -1,0 +1,18 @@
+#!/bin/bash
+cd folder1
+mkdir folder1.1
+mkdir folder1.2
+mkdir folder1.3
+cd folder1.2
+touch file1.txt
+touch file2.txt
+touch file3.txt
+touch file4.json
+touch file5.json
+mkdir folder1.2.1
+mkdir folder1.2.2
+mkdir folder1.2.3
+ls -la
+mv file2.txt folder1.2.1/file2.txt
+mv file1.txt folder1.2.3/file1.txt
+
